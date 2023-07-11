@@ -1,12 +1,12 @@
 import os
 import subprocess
 class CRD:
-    def __init__(self, user, c, p ,a):
+    def __init__(self, user, c, p, a):
         os.system("apt update")
         self.installCRD()
         self.installDesktopEnvironment()
         self.installGoogleChorme()
-        self.finish(user, a, c, p)
+        self.finish(user, c, p, a)
         print("\nRDP created succesfully move to https://remotedes" + "ktop.google.com/access")
 
     @staticmethod
